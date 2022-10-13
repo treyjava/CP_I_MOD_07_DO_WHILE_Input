@@ -25,19 +25,24 @@ public class Main
         final int SENTINEL = -1;
 
 
-        do {
+        do
+        {
         // Favorite number 1 - 10
         System.out.print("Enter your fav num [1 - 10]: ");
-        if(in.hasNextInt()) {
+        if(in.hasNextInt())
+        {
             favNum = in.nextInt();
             in.nextLine();
             if (favNum >= 1 && favNum <= 10) {
                 System.out.println("You said your fav num is " + favNum);
                 done = true;
-            } else {
+            }
+            else
+            {
                 System.out.println("You said your fav num is " + favNum + " but that is out of range");
             }
-            }else // don't have an int
+        }
+            else // don't have an int
             {
                 trash = in.nextLine();
                 System.out.println("You must enter an integer not " + trash);
@@ -125,7 +130,7 @@ public class Main
         // For loop
         for(int x=0; x < 10; x++)
         {
-            
+
         }
 
 
